@@ -1,0 +1,352 @@
+10:53:13.787 Killing runner with PID:9208 forcefully
+11:15:55.732 Killing runner with PID:5504 forcefully
+13:45:01.218 # Check Contribute Page
+13:45:03.764 ## Start home page
+13:45:03.764 * The user launches the Gauge home page
+13:45:07.065 ## Navigate to Contribute page
+13:45:07.066 * Given
+13:45:07.067 * The home page is displayed
+13:45:07.171 * When
+13:45:07.172 * The user clicks on the Contribute button
+13:45:09.343 * Then
+13:45:09.344 * The Contribute page is displayed
+13:45:09.379 ## Check page elements
+13:45:09.380 * Given
+13:45:09.380 * The Contribute page is displayed
+13:45:09.399 * Then
+13:45:09.400 * The How to contribute section is displayed
+13:45:09.977 Failed Step: The How to contribute section is displayed
+13:45:09.977 Error Message: java.lang.AssertionError: The subject was expected to be true, but was false
+13:45:09.977 Stacktrace: 
+com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:24)
+com.google.common.truth.FailureStrategy.fail(FailureStrategy.java:20)
+com.google.common.truth.Subject.failWithRawMessage(Subject.java:381)
+com.google.common.truth.BooleanSubject.isTrue(BooleanSubject.java:43)
+ContributePageSteps.verifyContributeSectionPresence(ContributePageSteps.java:28)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:96)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+13:45:10.292 # Specification Heading
+13:45:12.339 ## Start home page
+13:45:12.339 * The user launches the Gauge home page
+13:45:16.185 ## Navigate to Get Started page
+13:45:16.186 * Given
+13:45:16.187 * The home page is displayed
+13:45:16.291 * When
+13:45:16.292 * The user clicks on the Get Started button
+13:45:17.300 * Then
+13:45:17.302 * The Get started page is displayed
+13:45:17.314 ## Check Download links
+13:45:17.314 * Given
+13:45:17.315 * The Get started page is displayed
+13:45:17.328 * When
+13:45:17.329 * The user clicks on the Linux button
+13:45:47.993 Failed Step: The user clicks on the Linux button
+13:45:47.993 Error Message: java.lang.AssertionError: Timed out after 30 seconds waiting for visibility of element located by By.cssSelector: #Linux>a
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EPHUSZEW0066', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_74'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9c6f6b39-c1a2-4c75-8a15-be2807f83a57
+13:45:47.993 Stacktrace: 
+driver.AsynchronousFinder.waitForElementDisplayed(AsynchronousFinder.java:292)
+driver.AsynchronousFinder.waitForElementDisplayed(AsynchronousFinder.java:277)
+controller.GetStartedPageCtrl.clickLinuxButton(GetStartedPageCtrl.java:19)
+GetSartedPageSteps.clickLinuxButton(GetSartedPageSteps.java:28)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:96)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+13:45:48.237 # Specification Heading
+13:45:50.093 ## Start home page
+13:45:50.098 * Given
+13:45:50.100 * The user launches the Gauge home page
+13:45:54.210 * Then
+13:45:54.211 * The home page is displayed
+13:45:54.311 ## Check presence of page elements
+13:45:54.311 * Given
+13:45:54.312 * The home page is displayed
+13:45:54.327 * Then
+13:45:54.328 * The Simple Syntax logo is displayed
+13:45:54.346 * The Get Started Fast logo is displayed
+13:45:54.366 * The Your Environment Your Tools logo is displayed
+13:45:54.381 * The Data Driven Execution logo is displayed
+13:45:54.990 Plugin [Html Report] with pid [8328] has exited
+13:45:54.990 Specifications:	3 executed	1 passed	2 failed	0 skipped
+13:45:54.990 Scenarios:	8 executed	6 passed	2 failed	0 skipped
+13:45:54.990 
+Total time taken: 53.47s
+13:46:41.281 # Specification Heading
+13:46:43.788 ## Start home page
+13:46:43.790 * Given
+13:46:43.795 * The user launches the Gauge home page
+13:46:47.466 * Then
+13:46:47.467 * The home page is displayed
+13:46:47.583 ## Check presence of page elements
+13:46:47.583 * Given
+13:46:47.584 * The home page is displayed
+13:46:47.601 * Then
+13:46:47.601 * The Simple Syntax logo is displayed
+13:46:47.620 * The Get Started Fast logo is displayed
+13:46:47.641 * The Your Environment Your Tools logo is displayed
+13:46:47.657 * The Data Driven Execution logo is displayed
+13:46:48.120 Plugin [Html Report] with pid [532] has exited
+13:46:48.120 Specifications:	1 executed	1 passed	0 failed	0 skipped
+13:46:48.120 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+13:46:48.120 
+Total time taken: 6.748s
+13:47:39.785 # Specification Heading
+13:47:42.352 ## Start home page
+13:47:42.366 * Given
+13:47:42.372 * The user launches the Gauge home page
+13:47:47.233 * Then
+13:47:47.234 * The home page is displayed
+13:47:47.350 ## Check presence of page elements
+13:47:47.350 * Given
+13:47:47.351 * The home page is displayed
+13:47:47.370 * Then
+13:47:47.370 * The Simple Syntax logo is displayed
+13:47:47.390 * The Get Started Fast logo is displayed
+13:47:47.410 * The Your Environment Your Tools logo is displayed
+13:47:47.447 * The Data Driven Execution logo is displayed
+13:47:47.932 Plugin [Html Report] with pid [8760] has exited
+13:47:47.932 Specifications:	1 executed	1 passed	0 failed	0 skipped
+13:47:47.932 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+13:47:47.932 
+Total time taken: 8.052s
+13:51:05.937 # Specification Heading
+13:51:08.416 ## Start home page
+13:51:08.417 * Given
+13:51:08.423 * The user launches the Gauge home page
+13:51:13.863 * Then
+13:51:13.864 * The home page is displayed
+13:51:13.969 ## Check presence of page elements
+13:51:13.969 * Given
+13:51:13.970 * The home page is displayed
+13:51:13.986 * Then
+13:51:13.987 * The Simple Syntax logo is displayed
+13:51:14.006 * The Get Started Fast logo is displayed
+13:51:14.026 * The Your Environment Your Tools logo is displayed
+13:51:14.042 * The Data Driven Execution logo is displayed
+13:51:14.522 Plugin [Html Report] with pid [1032] has exited
+13:51:14.522 Specifications:	1 executed	1 passed	0 failed	0 skipped
+13:51:14.522 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+13:51:14.522 
+Total time taken: 8.489s
+13:51:43.396 # Specification Heading
+13:51:45.881 ## Start home page
+13:51:45.881 * The user launches the Gauge home page
+13:51:48.536 ## Navigate to Get Started page
+13:51:48.537 * Given
+13:51:48.538 * The home page is displayed
+13:51:48.641 * When
+13:51:48.642 * The user clicks on the Get Started button
+13:51:49.847 * Then
+13:51:49.849 * The Get started page is displayed
+13:51:49.867 ## Check Download links
+13:51:49.867 * Given
+13:51:49.868 * The Get started page is displayed
+13:51:49.880 * When
+13:51:49.881 * The user clicks on the Linux button
+13:52:20.720 Failed Step: The user clicks on the Linux button
+13:52:20.720 Error Message: java.lang.AssertionError: Timed out after 30 seconds waiting for visibility of element located by By.cssSelector: #Linux>a
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EPHUSZEW0066', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_74'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ef156a70-220e-49f0-909a-02fcd3a39372
+13:52:20.720 Stacktrace: 
+driver.AsynchronousFinder.waitForElementDisplayed(AsynchronousFinder.java:292)
+driver.AsynchronousFinder.waitForElementDisplayed(AsynchronousFinder.java:277)
+controller.GetStartedPageCtrl.clickLinuxButton(GetStartedPageCtrl.java:19)
+GetSartedPageSteps.clickLinuxButton(GetSartedPageSteps.java:28)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:31)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:96)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:77)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:58)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+13:52:21.159 Plugin [Html Report] with pid [9524] has exited
+13:52:21.559 Specifications:	1 executed	0 passed	1 failed	0 skipped
+13:52:21.559 Scenarios:	3 executed	2 passed	1 failed	0 skipped
+13:52:21.559 
+Total time taken: 37.662s
+13:53:00.495 # Specification Heading
+13:53:03.037 ## Start home page
+13:53:03.040 * The user launches the Gauge home page
+13:53:11.910 ## Navigate to Get Started page
+13:53:11.912 * Given
+13:53:11.914 * The home page is displayed
+13:53:12.090 * When
+13:53:12.091 * The user clicks on the Get Started button
+13:53:13.292 * Then
+13:53:13.293 * The Get started page is displayed
+13:53:13.331 ## Check Download links
+13:53:13.331 * Given
+13:53:13.332 * The Get started page is displayed
+13:53:13.351 * When
+13:53:13.352 * The user clicks on the Linux button
+13:53:13.435 * Then
+13:53:13.436 * The 32 bit version link has URL ending "gauge-0.3.2-linux.x86.zip"
+13:53:13.475 * The 64 bit version link has URL ending "gauge-0.3.2-linux.x86_64.zip"
+13:53:13.934 Plugin [Html Report] with pid [6236] has exited
+13:53:13.934 Specifications:	1 executed	1 passed	0 failed	0 skipped
+13:53:13.934 Scenarios:	3 executed	3 passed	0 failed	0 skipped
+13:53:13.934 
+Total time taken: 13.343s
+13:53:27.604 # Check Contribute Page
+13:53:30.109 ## Start home page
+13:53:30.110 * The user launches the Gauge home page
+13:53:33.328 ## Navigate to Contribute page
+13:53:33.329 * Given
+13:53:33.331 * The home page is displayed
+13:53:33.441 * When
+13:53:33.442 * The user clicks on the Contribute button
+13:53:34.534 * Then
+13:53:34.536 * The Contribute page is displayed
+13:53:34.561 ## Check page elements
+13:53:34.562 * Given
+13:53:34.563 * The Contribute page is displayed
+13:53:34.579 * Then
+13:53:34.580 * The How to contribute section is displayed
+13:53:34.596 * The code contribution process is displayed
+13:53:35.019 Plugin [Html Report] with pid [2748] has exited
+13:53:35.019 Specifications:	1 executed	1 passed	0 failed	0 skipped
+13:53:35.019 Scenarios:	3 executed	3 passed	0 failed	0 skipped
+13:53:35.019 
+Total time taken: 7.319s
+13:57:16.340 # Check Contribute Page
+13:57:18.862 ## Start home page
+13:57:18.862 * The user launches the Gauge home page
+13:57:30.030 ## Navigate to Contribute page
+13:57:30.034 * Given
+13:57:30.037 * The home page is displayed
+13:57:30.137 * When
+13:57:30.138 * The user clicks on the Contribute button
+13:57:31.334 * Then
+13:57:31.335 * The Contribute page is displayed
+13:57:31.356 ## Check page elements
+13:57:31.356 * Given
+13:57:31.358 * The Contribute page is displayed
+13:57:31.374 * Then
+13:57:31.375 * The How to contribute section is displayed
+13:57:31.393 * The code contribution process is displayed
+13:57:31.701 # Check Get Started page
+13:57:33.663 ## Start home page
+13:57:33.664 * The user launches the Gauge home page
+13:57:36.286 ## Navigate to Get Started page
+13:57:36.286 * Given
+13:57:36.288 * The home page is displayed
+13:57:36.373 * When
+13:57:36.374 * The user clicks on the Get Started button
+13:57:37.701 * Then
+13:57:37.702 * The Get started page is displayed
+13:57:37.734 ## Check Download links
+13:57:37.735 * Given
+13:57:37.736 * The Get started page is displayed
+13:57:37.753 * When
+13:57:37.753 * The user clicks on the Linux button
+13:57:37.846 * Then
+13:57:37.846 * The 32 bit version link has URL ending "gauge-0.3.2-linux.x86.zip"
+13:57:37.887 * The 64 bit version link has URL ending "gauge-0.3.2-linux.x86_64.zip"
+13:57:38.167 # Check Home page
+13:57:40.134 ## Start home page
+13:57:40.136 * Given
+13:57:40.137 * The user launches the Gauge home page
+13:57:43.645 * Then
+13:57:43.647 * The home page is displayed
+13:57:43.742 ## Check presence of page elements
+13:57:43.742 * Given
+13:57:43.743 * The home page is displayed
+13:57:43.759 * Then
+13:57:43.760 * The Simple Syntax logo is displayed
+13:57:43.779 * The Get Started Fast logo is displayed
+13:57:43.798 * The Your Environment Your Tools logo is displayed
+13:57:43.816 * The Data Driven Execution logo is displayed
+13:57:44.149 Plugin [Html Report] with pid [9928] has exited
+13:57:44.149 Specifications:	3 executed	3 passed	0 failed	0 skipped
+13:57:44.149 Scenarios:	8 executed	8 passed	0 failed	0 skipped
+13:57:44.149 
+Total time taken: 27.713s
+13:57:57.244 # Check Contribute Page
+13:57:59.225 ## Start home page
+13:57:59.226 * The user launches the Gauge home page
+13:58:03.970 ## Navigate to Contribute page
+13:58:03.973 * Given
+13:58:03.979 * The home page is displayed
+13:58:04.027 * When
+13:58:04.028 * The user clicks on the Contribute button
+13:58:04.976 * Then
+13:58:04.978 * The Contribute page is displayed
+13:58:05.029 ## Check page elements
+13:58:05.029 * Given
+13:58:05.031 * The Contribute page is displayed
+13:58:05.060 * Then
+13:58:05.061 * The How to contribute section is displayed
+13:58:05.091 * The code contribution process is displayed
+13:58:05.870 # Check Get Started page
+13:58:07.366 ## Start home page
+13:58:07.366 * The user launches the Gauge home page
+13:58:11.697 ## Navigate to Get Started page
+13:58:11.700 * Given
+13:58:11.701 * The home page is displayed
+13:58:11.748 * When
+13:58:11.749 * The user clicks on the Get Started button
+13:58:12.687 * Then
+13:58:12.688 * The Get started page is displayed
+13:58:12.721 ## Check Download links
+13:58:12.723 * Given
+13:58:12.724 * The Get started page is displayed
+13:58:12.745 * When
+13:58:12.745 * The user clicks on the Linux button
+13:58:12.807 * Then
+13:58:12.808 * The 32 bit version link has URL ending "gauge-0.3.2-linux.x86.zip"
+13:58:12.858 * The 64 bit version link has URL ending "gauge-0.3.2-linux.x86_64.zip"
+13:58:13.607 # Check Home page
+13:58:15.105 ## Start home page
+13:58:15.105 * Given
+13:58:15.107 * The user launches the Gauge home page
+13:58:18.302 * Then
+13:58:18.304 * The home page is displayed
+13:58:18.344 ## Check presence of page elements
+13:58:18.345 * Given
+13:58:18.346 * The home page is displayed
+13:58:18.380 * Then
+13:58:18.381 * The Simple Syntax logo is displayed
+13:58:18.413 * The Get Started Fast logo is displayed
+13:58:18.441 * The Your Environment Your Tools logo is displayed
+13:58:18.470 * The Data Driven Execution logo is displayed
+13:58:19.301 Plugin [Html Report] with pid [5932] has exited
+13:58:19.301 Specifications:	3 executed	3 passed	0 failed	0 skipped
+13:58:19.301 Scenarios:	8 executed	8 passed	0 failed	0 skipped
+13:58:19.301 
+Total time taken: 21.961s
